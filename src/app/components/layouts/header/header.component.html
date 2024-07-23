@@ -1,0 +1,24 @@
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <a href="" class="logo">
+        <img src="https://flowbite.com/docs/images/logo.svg" alt="Flowbite Logo" />
+        <span class="logo-text">Flowbite</span>
+      </a>
+
+      <div class="nav-menu" id="mobile-menu-2">
+        <ul class="menu-items">
+          <li><a routerLink="/home" routerLinkActive="active" class="menu-link active">Home</a></li>
+          <li><a href="#" class="menu-link">Company</a></li>
+          <li><a href="#" class="menu-link">Team</a></li>
+          <li><a href="#" class="menu-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="flex">
+        <p>USD: {{getCurrency('USD')? getCurrency('USD') : '00.00000'}}</p>
+        <p>EUR: {{getCurrency('EUR')? getCurrency('EUR') : '00.00000'}}</p>
+      </div>
+    </div>
+  </nav>
+</header>
